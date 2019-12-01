@@ -18,5 +18,4 @@ https.get(' https://jsonplaceholder.typicode.com/posts/1',
             console.log(verifyid());
         })
         res.on('end', () => console.log(body));
-
-    });
+});

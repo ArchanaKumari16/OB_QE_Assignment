@@ -9,12 +9,9 @@ https.post(' https://jsonplaceholder.typicode.com/posts', { title: 'foo', body: 
         }
         console.log(verifystatuscode());
         let info = JSON.parse(data);
-        data = JSON.stringify(info);
-        console.log(data);
         function verifyuserid() {
             return info.userId === '1';
         }
         console.log(verifyuserid());
-    })
-
+    });
 });
