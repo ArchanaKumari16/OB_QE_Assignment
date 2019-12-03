@@ -1,7 +1,6 @@
-var https = require('https');
-var https.post = require('https-post');
+const http_post = require('https-post');
 
-https.post(' https://jsonplaceholder.typicode.com/posts', { title: 'foo', body: 'bar', userId: 1 }, function(res){
+https_post('https://jsonplaceholder.typicode.com/posts', { title: 'foo', body: 'bar', userId: 1 }, function(res){
     res.on('data', data => {
         console.log(res.statusCode);
         function verifystatuscode() {

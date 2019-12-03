@@ -1,7 +1,6 @@
-var https = require('https');
-var assert = require('assert');
+const https = require('https');
 
-https.get(' https://jsonplaceholder.typicode.com/posts/1',
+https.get('https://jsonplaceholder.typicode.com/posts/1',
     res => {
         console.log(res.statusCode);
         function assertStatue() {
